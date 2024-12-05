@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/443414f3-71f1-41fe-92c5-12a346be997e)# ЯК ЗГЕНЕРУВАТИ ФАЙЛИ:
+# ЯК ЗГЕНЕРУВАТИ ФАЙЛИ:
 ## orders.txt
 1. Відкрити OrdersGeneratorApp.java
 2. Вказати бажану кількість згенерованих замовлень
