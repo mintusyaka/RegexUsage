@@ -1,3 +1,7 @@
+Формат рядку з замовленням:
+```
+Username: _, Order ID: _, Status: _;
+```
 Функція, що фільтрує замовлення за статусом:
 ```
 public static List<String> getRowsByStatus(List<String> rows, String status) {
