@@ -1,5 +1,5 @@
-#ЯК ЗГЕНЕРУВАТИ ФАЙЛИ:
-##orders.txt
+# ЯК ЗГЕНЕРУВАТИ ФАЙЛИ:
+## orders.txt
 1. Відкрити OrdersGeneratorsApp.java
 2. Вказати бажану кількість згенерованих замовлень
    ![image](https://github.com/user-attachments/assets/89fe22e7-fa34-408f-a2b9-242500445ecf)
