@@ -1,5 +1,6 @@
 Функція, що фільтрує замовлення за статусом:
 
+
 public static List<String> getRowsByStatus(List<String> rows, String status) {
         String regex = "Status: (" + status + ");.*";
 
