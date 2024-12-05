@@ -1,8 +1,16 @@
-Формат рядку з замовленням:
+#ЯК ЗГЕНЕРУВАТИ ФАЙЛИ:
+##orders.txt
+1. Відкрити OrdersGeneratorsApp.java
+2. Вказати бажану кількість згенерованих замовлень
+   ![image](https://github.com/user-attachments/assets/89fe22e7-fa34-408f-a2b9-242500445ecf)
+
+
+
+###Формат рядку з замовленням:
 ```
 Username: _, Order ID: _, Status: _;
 ```
-Функція, що фільтрує замовлення за статусом:
+###Функція, що фільтрує замовлення за статусом:
 ```
 public static List<String> getRowsByStatus(List<String> rows, String status) {
         String regex = "Status: (" + status + ");.*";
