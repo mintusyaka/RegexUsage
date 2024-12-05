@@ -34,8 +34,9 @@ public static List<String> getRowsByNicknamePart(List<String> rows, String partO
 
     return resultList;
 }
----
 ```
+---
+
 Функція, що фільтрує студентів за роком вступу:
 ```
 private static List<String> getStudentsByYear(List<String> rows, String years) {
