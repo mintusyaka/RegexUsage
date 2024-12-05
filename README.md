@@ -37,6 +37,10 @@ public static List<String> getRowsByNicknamePart(List<String> rows, String partO
 ```
 ---
 
+Формат рядку з студентом:
+```
+Name: Name Surname, Email: name.surname.GROUP.year@lpnu.ua, Group: GROUP-11, Year: year;
+```
 Функція, що фільтрує студентів за роком вступу:
 ```
 private static List<String> getStudentsByYear(List<String> rows, String years) {
