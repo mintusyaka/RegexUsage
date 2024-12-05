@@ -1,6 +1,5 @@
 Функція, що фільтрує замовлення за статусом:
-
-
+```
 public static List<String> getRowsByStatus(List<String> rows, String status) {
         String regex = "Status: (" + status + ");.*";
 
@@ -17,8 +16,9 @@ public static List<String> getRowsByStatus(List<String> rows, String status) {
 
         return resultList;
     }
-
+```
 Функція, що фільтрує замовлення за іменем користувача:
+```
 public static List<String> getRowsByNicknamePart(List<String> rows, String partOfNickname) {
     String regex = "Username: .*?" + Pattern.quote(partOfNickname) + ".*?, Order ID: .*";
 
@@ -30,8 +30,9 @@ public static List<String> getRowsByNicknamePart(List<String> rows, String partO
 
     return resultList;
 }
-
+```
 Функція, що фільтрує студентів за роком вступу:
+```
 private static List<String> getStudentsByYear(List<String> rows, String years) {
     if(years.isEmpty())
         return rows;
@@ -51,8 +52,9 @@ private static List<String> getStudentsByYear(List<String> rows, String years) {
 
     return resultList;
 }
-
+```
 Функція, що фільтрує студентів за спеціальністю:
+```
 public static List<String> getStudentsByGroupName(List<String> rows, String groupNames) {
     if(groupNames.isEmpty())
         return rows;
@@ -72,8 +74,9 @@ public static List<String> getStudentsByGroupName(List<String> rows, String grou
 
     return resultList;
 }
-
+```
 Функція, що фільтрує студентів за іменем:
+```
 private static List<String> filterByName(List<String> rows, String name) {
     if(name.isEmpty())
         return rows;
@@ -93,8 +96,9 @@ private static List<String> filterByName(List<String> rows, String name) {
 
     return resultList;
 }
-
+```
 Функція, що фільтрує студентів за прізвищем:
+```
 private static List<String> filterBySurname(List<String> rows, String surname) {
     if(surname.isEmpty())
         return rows;
@@ -114,3 +118,4 @@ private static List<String> filterBySurname(List<String> rows, String surname) {
 
     return resultList;
 }
+```
