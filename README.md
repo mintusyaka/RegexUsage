@@ -1,16 +1,23 @@
-# ЯК ЗГЕНЕРУВАТИ ФАЙЛИ:
+![image](https://github.com/user-attachments/assets/443414f3-71f1-41fe-92c5-12a346be997e)# ЯК ЗГЕНЕРУВАТИ ФАЙЛИ:
 ## orders.txt
-1. Відкрити OrdersGeneratorsApp.java
+1. Відкрити OrdersGeneratorApp.java
 2. Вказати бажану кількість згенерованих замовлень
    ![image](https://github.com/user-attachments/assets/89fe22e7-fa34-408f-a2b9-242500445ecf)
+3. Запустити
 
+## students.txt
+1. Відкрити StudentsGeneratorApp.java
+2. Вказати бажану кількість згенерованих студентів
+   ![image](https://github.com/user-attachments/assets/d782b595-5c3d-46dc-9230-6baa7b1bad58)
+3. Запустити
 
+---
 
-###Формат рядку з замовленням:
+### Формат рядку з замовленням:
 ```
 Username: _, Order ID: _, Status: _;
 ```
-###Функція, що фільтрує замовлення за статусом:
+### Функція, що фільтрує замовлення за статусом:
 ```
 public static List<String> getRowsByStatus(List<String> rows, String status) {
         String regex = "Status: (" + status + ");.*";
@@ -29,7 +36,7 @@ public static List<String> getRowsByStatus(List<String> rows, String status) {
         return resultList;
     }
 ```
-Функція, що фільтрує замовлення за іменем користувача:
+### Функція, що фільтрує замовлення за іменем користувача:
 ```
 public static List<String> getRowsByNicknamePart(List<String> rows, String partOfNickname) {
     String regex = "Username: .*?" + Pattern.quote(partOfNickname) + ".*?, Order ID: .*";
@@ -45,11 +52,11 @@ public static List<String> getRowsByNicknamePart(List<String> rows, String partO
 ```
 ---
 
-Формат рядку з студентом:
+### Формат рядку з студентом:
 ```
 Name: Name Surname, Email: name.surname.GROUP.year@lpnu.ua, Group: GROUP-11, Year: year;
 ```
-Функція, що фільтрує студентів за роком вступу:
+### Функція, що фільтрує студентів за роком вступу:
 ```
 private static List<String> getStudentsByYear(List<String> rows, String years) {
     if(years.isEmpty())
@@ -71,7 +78,7 @@ private static List<String> getStudentsByYear(List<String> rows, String years) {
     return resultList;
 }
 ```
-Функція, що фільтрує студентів за спеціальністю:
+### Функція, що фільтрує студентів за спеціальністю:
 ```
 public static List<String> getStudentsByGroupName(List<String> rows, String groupNames) {
     if(groupNames.isEmpty())
@@ -93,7 +100,7 @@ public static List<String> getStudentsByGroupName(List<String> rows, String grou
     return resultList;
 }
 ```
-Функція, що фільтрує студентів за іменем:
+### Функція, що фільтрує студентів за іменем:
 ```
 private static List<String> filterByName(List<String> rows, String name) {
     if(name.isEmpty())
@@ -115,7 +122,7 @@ private static List<String> filterByName(List<String> rows, String name) {
     return resultList;
 }
 ```
-Функція, що фільтрує студентів за прізвищем:
+### Функція, що фільтрує студентів за прізвищем:
 ```
 private static List<String> filterBySurname(List<String> rows, String surname) {
     if(surname.isEmpty())
